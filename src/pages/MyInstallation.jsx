@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 
 const MyInstallation = () => {
   const [myAppsIds] = useState(JSON.parse(localStorage.getItem("apps")) || []);
-  const allApps = useLoaderData();
+  const { allApps } = useLoaderData();
   const [myApps, setMyApps] = useState([]);
 
   useEffect(() => {

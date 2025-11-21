@@ -15,7 +15,7 @@ const AllAppsPage = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/apps?limit=${limit}&skip=${
+      `https://apps-store-server.vercel.app/apps?limit=${limit}&skip=${
         currentPage * limit
       }&sortby=${sort}&order=${order}&search=${searchText}`
     )
